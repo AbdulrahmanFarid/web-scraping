@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import requests
 from selenium.webdriver import Firefox
 from selenium.webdriver.firefox.options import Options
@@ -36,13 +37,12 @@ def is_result_appeared(session_data):
         #here it will give alram continuously
         while(True):
             print('\a\a')
-#    else:
-#        print('result did not appear yet')
+    else:
+        print('result did not appear yet')
 
        
    
 if __name__ ==  '__main__':
-    #is_result_appeared(result_website())
-    #while(True):
+    while(True):
         result_javascript()
-    #    time.sleep(10*60)
+        time.sleep(10*60)
